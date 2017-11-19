@@ -1,0 +1,117 @@
+{
+  "blogposts": [
+    {
+      "id": 2,
+      "title": "Title 2",
+      "author": "hashedPotato",
+      "authorId": 5,
+      "post": "Post 2. Updated.",
+      "category": 3,
+      "time": 1510952518047
+    },
+    {
+      "author": "awesomePotato",
+      "authorId": 0,
+      "title": "Lorem Ipsum",
+      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ipsum tristique, lobortis magna vel, aliquam risus. Vivamus ac porttitor turpis, in placerat massa. Nulla facilisi. Praesent justo turpis, eleifend vitae facilisis sit amet, venenatis quis dolor. Phasellus mattis eros in massa tempor malesuada. Nulla sit amet imperdiet nibh. Aliquam ac mollis lectus, quis feugiat tortor. Morbi ac sem dui. Fusce quis suscipit erat. Quisque consectetur tempus libero nec consequat. Fusce iaculis, quam vitae laoreet lacinia, massa massa pellentesque erat, quis faucibus velit sapien vel neque. Nunc eget ultrices nunc. Donec pulvinar mattis enim ut dapibus. Integer ut tincidunt magna. Pellentesque eget venenatis eros. In finibus id nisi at pharetra.\n\nSed varius, orci id consectetur sodales, lectus odio faucibus lectus, at varius felis lacus sit amet purus. Morbi semper augue ac mauris auctor, ut tempus dui pretium. Nam orci lorem, iaculis ornare mi quis, tempus semper elit. Maecenas commodo risus ex, a feugiat dolor feugiat id. Maecenas ornare tellus ac quam imperdiet pretium. Aliquam a odio ac elit auctor euismod. Sed et lobortis velit. Donec hendrerit bibendum vehicula. Aenean viverra, felis volutpat volutpat bibendum, velit massa cursus purus, id aliquam libero eros eu turpis. Donec commodo dignissim ligula et dictum. Mauris ultrices efficitur urna, quis fermentum felis consectetur ac. Sed id maximus lacus. Integer lacinia mollis elit, condimentum faucibus turpis tristique ut. Sed condimentum ornare eros et venenatis. Nunc sodales turpis vitae ligula condimentum porttitor. Phasellus congue sollicitudin suscipit.\n\nNam pretium porta tincidunt. Donec interdum scelerisque elit, quis hendrerit dui. Proin orci nisi, dictum pellentesque odio eget, viverra aliquet magna. In tincidunt nunc id augue lobortis feugiat. Fusce ut nunc nisi. Cras aliquet felis vitae convallis rhoncus. Vivamus consectetur dui justo, nec semper sem congue sit amet. Duis tincidunt libero non massa mollis, mollis pharetra massa pellentesque. Quisque ut nisi congue, posuere lorem a, dignissim erat. Praesent vehicula eros et turpis cursus, vel tempor tellus lacinia. Aenean vel luctus eros, non tincidunt tortor. Donec quis nisl finibus, molestie arcu a, porttitor lacus. Cras ultrices pretium massa luctus pretium.\n\nPraesent est tellus, vestibulum sed scelerisque id, scelerisque id ligula. Proin vel orci tortor. Suspendisse nec ultricies mauris. Donec lacinia, quam a molestie elementum, ipsum orci aliquet nisi, sit amet suscipit nisl metus vel ex. Aenean commodo ac neque vel placerat. Suspendisse arcu elit, finibus non rutrum id, mollis quis velit. Mauris rhoncus mattis arcu at porttitor. Donec in fringilla quam, a posuere lorem. Vestibulum a scelerisque felis, porta elementum augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec orci sapien, volutpat vel placerat quis, posuere at massa. Donec vel feugiat lectus, eget interdum diam. Nulla eget feugiat justo. Etiam aliquam, risus ut accumsan imperdiet, erat orci lobortis ipsum, et fringilla nisl erat a ante.\n\nPellentesque pellentesque, risus nec tristique euismod, quam metus luctus risus, vitae efficitur enim mauris nec nibh. Duis vitae risus quis enim efficitur eleifend. Proin est massa, bibendum eget nisi in, eleifend pellentesque eros. Aliquam feugiat consequat iaculis. Aenean at volutpat lectus, eget pretium enim. Aenean fringilla suscipit nulla. Cras nisi nulla, bibendum vel augue id, dapibus vestibulum urna. Maecenas non massa sed sapien vestibulum facilisis ac at lacus. Nulla elementum ac odio ac bibendum. Cras sed augue eget leo varius dignissim ac ut ex. Duis bibendum facilisis mauris, et rhoncus ex aliquam in. Nulla non magna varius, luctus mi sit amet, ultrices tellus. Curabitur ornare laoreet neque, quis convallis velit finibus et.",
+      "id": 3,
+      "category": 2,
+      "time": 1510952518047
+    },
+    {
+      "author": "hashedPotato",
+      "authorId": 5,
+      "title": "This is another test post.",
+      "post": "Please don't mind my test post.",
+      "time": 1510952518047,
+      "id": 4,
+      "category": 3
+    },
+    {
+      "author": "hashedPotato",
+      "authorId": 5,
+      "title": "possst",
+      "post": "psssssssssssssssssst.",
+      "time": 1510952518047,
+      "id": 5,
+      "category": 3
+    }
+  ],
+  "users": [
+    {
+      "username": "awesomePotato",
+      "password": "potatopassword",
+      "id": 0
+    },
+    {
+      "username": "justSomePotato",
+      "password": "potatopassword1",
+      "id": 1
+    },
+    {
+      "username": "anotherPotato",
+      "password": "potatopassword",
+      "id": 2
+    },
+    {
+      "username": "dryPotato",
+      "password": "potatopassword",
+      "id": 3
+    },
+    {
+      "username": "cryPotato",
+      "password": "potatopassword",
+      "id": 4
+    },
+    {
+      "username": "hashedPotato",
+      "password": "potatopassword",
+      "id": 5
+    }
+  ],
+  "userdetails": [
+    {
+      "username": "awesomePotato",
+      "id": 0,
+      "favorites": [
+        3,
+        2
+      ]
+    },
+    {
+      "username": "justSomePotato",
+      "id": 1,
+      "favorites": [
+        3
+      ]
+    },
+    {
+      "username": "anotherPotato",
+      "id": 2,
+      "favorites": [
+        3
+      ]
+    },
+    {
+      "username": "dryPotato",
+      "id": 3,
+      "favorites": [
+        3
+      ]
+    },
+    {
+      "username": "cryPotato",
+      "id": 4,
+      "favorites": [
+        3
+      ]
+    },
+    {
+      "username": "hashedPotato",
+      "id": 5,
+      "favorites": [
+        3
+      ]
+    }
+  ]
+}

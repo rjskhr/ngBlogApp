@@ -1,0 +1,11 @@
+<div class="row" style="margin-bottom: 0px;">
+  <div class="col offset-m1 collection-header"><h4 style="font-size: 1.64rem;">Recents</h4></div>
+</div>
+
+<div *ngIf="!blogposts">
+  Loading...
+</div>
+
+<div *ngIf="blogposts">
+  <app-blogmini [blog]="blog" (deleted)="blogDeleteHandler($event)"  *ngFor="let blog of blogposts"></app-blogmini>
+</div>

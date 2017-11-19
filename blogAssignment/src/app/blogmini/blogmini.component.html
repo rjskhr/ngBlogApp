@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col m10 offset-m1">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title" [routerLink]="['/blogs', blog.id]">{{blog.title}}</span>
+
+        <p>
+          {{blog.post.slice(0, 240)}}
+          <a *ngIf="(blog.post.length > 240)" [routerLink]="['/blogs', blog.id]">... read more.</a>
+        </p>
+        <span class="chip">{{categories[this.blog.category - 1]}}</span>
+      </div>
+      <div id="actionbar" class="card-action">
+        <a id="author">
+          <i class="material-icons left">person</i>
+          {{blog.author}}
+          <span id="date">on {{win.Date(blog.time).substr(4,11)}}</span>
+        </a>
+
+
+        <a *ngIf="blogaction.loggedin">
+          <i class="material-icons right" (click)="blogaction.isFav(blog.id)? blogaction.unfavD(blog.id): blogaction.favD(blog.id)">
+            {{blogaction.isFav(blog.id)? 'favorite': 'favorite_border'}}
+          </i>
+        </a>
+        <a *ngIf="blogaction.isEditable(blog.authorId)">
+          <i class="material-icons right" (click)="deleteHandler()">delete</i>
+          <i class="material-icons right" [routerLink]="['/blogs', blog.id, 'update']">edit</i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

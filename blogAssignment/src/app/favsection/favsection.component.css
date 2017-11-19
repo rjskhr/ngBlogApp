@@ -1,0 +1,12 @@
+.collection.with-header .collection-item.liist {
+  padding-left: 10px;
+}
+
+.bar{
+  font-size: small;
+  color: grey;
+}
+
+a i{
+  color: #ffab40;
+}

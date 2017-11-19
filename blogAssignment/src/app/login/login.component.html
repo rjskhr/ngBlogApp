@@ -1,0 +1,20 @@
+<div *ngIf="!loggedin" class="row">
+  <div class="card blue-grey darken-1 col m6 offset-m3">
+    <div class="card-content white-text">
+      <span class="card-title">Welcome Back, You.</span>
+      <div class="input-field">
+        <input id="item_name" [(ngModel)]="username" type="text" class="validate">
+        <label for="item_name">Username</label>
+      </div>
+      <div class="input-field">
+        <input id="item_desc" [(ngModel)]="password" type="password" class="validate">
+        <label for="item_desc">Password</label>
+      </div>
+      <a (click)="loginclick(username, password)" class="waves-effect waves-light btn">Login</a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="loggedin">
+  You're logged in! Go somewhere else maybe?
+</div>

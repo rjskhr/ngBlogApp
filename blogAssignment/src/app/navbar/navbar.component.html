@@ -1,0 +1,32 @@
+<nav class="navbar-fixed nav-extended">
+  <div class="nav-wrapper blue-grey darken-2">
+    <a [routerLink]="['home']" class="brand-logo">Potatoes, Latin and Others: A Definitive Blog</a>
+    <a>{{hellomsg}}</a>
+    <ul class="right">
+      <li><a (click)="onSearchClick()">Search/Filter</a></li>
+      <li><a [routerLink]="['blogs']">All Posts</a></li>
+      <app-profile *ngIf="loggedin" [username]="username" (logout)="logoutClick()"></app-profile>
+      <li *ngIf="!loggedin"><a [routerLink]="['login']">Login</a></li>
+    </ul>
+  </div>
+
+
+  <div class="nav-content blue-grey darken-2" *ngIf="searchdisplay">
+    <div class="row">
+      <ul class="tabs tabs-transparent">
+        <li class="tab disabled"><a>Categories:</a></li>
+        <li class="tab"><a class="active" (click)="sendFilterCategory(0)">All</a></li>
+        <li class="tab"><a (click)="sendFilterCategory(1)">Potatoes</a></li>
+        <li class="tab"><a (click)="sendFilterCategory(2)">Latin</a></li>
+        <li class="tab"><a (click)="sendFilterCategory(3)">Other</a></li>
+        <input placeholder="  Search" class="col m3 offset-m2" id="search" [(ngModel)]="searchTerm" type="text">
+        <li><i id="searchicon" class="material-icons" (click)="sendSearchTerm()">search</i></li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+
+
+

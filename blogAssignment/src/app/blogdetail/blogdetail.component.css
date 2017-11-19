@@ -1,0 +1,36 @@
+i {
+  margin-right: 10px;
+  color: #ffab40;
+}
+
+#author{
+  font-size: 18px;
+  color: #ffab40;
+}
+
+#date{
+  font-size: 18px;
+  color: #ffab40;
+}
+
+#by{
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+#on{
+  font-size: 15px;
+  margin-left: 4px;
+}
+
+.chip{
+  margin: 0px;
+}
+
+.card .card-content{
+  padding-bottom: 12px;
+}
+
+.card .card-content p{
+  margin-bottom: 10px;
+}

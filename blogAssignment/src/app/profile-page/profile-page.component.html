@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col s4">
+    <app-favsection></app-favsection>
+  </div>
+  <div class="col s8">
+    <div class="row" style="margin-bottom: 0px;">
+      <div class="col offset-m1 collection-header"><h4 style="font-size: 1.64rem;">My Posts</h4></div>
+    </div>
+
+    <div *ngIf="!blogposts">
+      You have to be logged in.
+    </div>
+
+    <div *ngIf="blogposts">
+      <app-blogmini [blog]="blog" (deleted)="blogDeleteHandler($event)"  *ngFor="let blog of blogposts"></app-blogmini>
+    </div>
+  </div>
+</div>
+

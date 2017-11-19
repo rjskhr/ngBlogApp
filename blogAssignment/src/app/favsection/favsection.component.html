@@ -1,0 +1,27 @@
+<ul class="collection with-header">
+  <li class="collection-header"><h5>Favorite Posts</h5></li>
+  <div *ngIf="loggedin">
+    <li class="collection-item liist" *ngFor="let fav of favposts">
+        <a [routerLink]="['/blogs', fav.id]">{{fav.title}}</a>
+
+        <div class="bar">
+          By {{fav.author}}
+          <a (click)="unfav(fav.id);">
+            <i class="tiny material-icons right">favorite</i>
+          </a>
+        </div>
+
+    </li>
+    <li class="collection-item" *ngIf="favposts.length==0">
+      When you favorite a post, it appears here.
+    </li>
+
+  </div>
+  <div *ngIf="!loggedin">
+    <li class="collection-item">
+      You have to be logged in to see this.
+    </li>
+  </div>
+</ul>
+
+

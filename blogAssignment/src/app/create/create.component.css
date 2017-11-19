@@ -1,0 +1,19 @@
+/*textarea{*/
+  /*border-radius: 5px;*/
+  /*padding: 10px;*/
+  /*margin-left: 10px;*/
+/*}*/
+
+/*textarea:focus{*/
+  /*outline: none !important;*/
+  /*!*border-radius: 5px;*!*/
+  /*border:1px solid blue;*/
+/*}*/
+
+.submit{
+  margin-left: 10px
+}
+
+div .col.m4 {
+  padding-left: 0px;
+}

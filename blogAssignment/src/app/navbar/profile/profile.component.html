@@ -1,0 +1,11 @@
+<li>
+  <a id="ddb" class='dropdown-button' data-activates='dropdown1' data-beloworigin="true">
+    {{username}} <i class="tiny  material-icons left">arrow_drop_down</i>
+  </a>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a [routerLink]="['profile']"><i class="material-icons">sentiment_very_satisfied</i>Profile</a></li>
+    <li><a [routerLink]="['create']"><i class="material-icons">add</i>Create Post</a></li>
+    <li class="divider"></li>
+    <li><a (click)="logoutClick()"><i class="material-icons">power_settings_new</i>Logout</a></li>
+  </ul>
+</li>
