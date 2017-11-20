@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 import {BehaviorSubject} from "rxjs/BehaviorSubject";
 import {BlogDataService} from "./blog-data.service";
 
-const BASE_URL = 'http://localhost:3204/';
+const BASE_URL = 'http://localhost:3205/';
 const header = {headers: new Headers({'Content-Type':'application/json'})};
 
 @Injectable()
@@ -98,7 +98,6 @@ export class LoginService {
         this._user.favorites = detailsJ.favorites;
         if(!this._user.favorites.includes(BlogId)){
           this._user.favorites.push(BlogId);
-          console.log(this._user);
           this.http.patch(`${BASE_URL}userdetails/${this._user.id}`, this._user, header)
             .subscribe(data => data);
         }

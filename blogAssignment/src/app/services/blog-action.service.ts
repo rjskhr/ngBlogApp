@@ -3,7 +3,7 @@ import {LoginService} from "./login.service";
 import {Http, Headers} from "@angular/http";
 import 'rxjs/add/operator/map';
 
-const BASE_URL = 'http://localhost:3204/';
+const BASE_URL = 'http://localhost:3205/';
 const header = {headers: new Headers({'Content-Type':'application/json'})};
 
 @Injectable()
@@ -92,8 +92,9 @@ export class BlogActionService {
       });
   }
 
-  updatePost(blogId: number, blogTitle: string, blogContent: string, blogCategory: number){
-    if(this._loggedin && this.isEditable(blogId)){
+  updatePost(authorId: number, blogId: number, blogTitle: string, blogContent: string, blogCategory: number){
+
+    if(this.isEditable(authorId)){
       let data = {
         'title': blogTitle,
         'post': blogContent,

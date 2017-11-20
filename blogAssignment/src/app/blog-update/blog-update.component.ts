@@ -38,7 +38,7 @@ export class BlogUpdateComponent implements OnInit {
 
   updatePost(){
     let blogCategory = (<any>window).$("select#blogCategory").val();
-    this.bas.updatePost(this.blogId, this.blogTitle, this.blogContent, +blogCategory)
+    this.bas.updatePost(this.blog.authorId, this.blogId, this.blogTitle, this.blogContent, +blogCategory)
       .subscribe((res) => {
         this.router.navigate([`/blogs/${res.id}`]);
       });

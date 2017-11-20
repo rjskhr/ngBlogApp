@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"json-server db.json --port 3204 --watch\" \"ng serve --port 4204\"",
+    "start": "concurrently \"json-server db.json --port 3205 --watch\" \"ng serve --port 4205\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
