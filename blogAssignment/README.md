@@ -1,27 +1,21 @@
 # BlogAssignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+## Live Version
 
-## Development server
+A live version of above project is hosted at http://latin-potatoes.bitballoon.com. For back-end, a demo server using json-server was hosted on Heroku at https://morning-sea-25541.herokuapp.com/. Append 'blogposts', 'users', or 'userdetails' to the end of heroku link to get information.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+If you refresh the bitballoon link, start from the root again, that is http://latin-potatoes.bitballoon.com. Changes made to the server (creating a new post, favoriting, deleting, etc.) will revert back to original if the Heroku app is inactive for more than 30 minutes. 
 
-## Code scaffolding
+## Implementations
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Login (Username and Password details can be found at [link](https://morning-sea-25541.herokuapp.com/users))
+- Recent posts can be viewed on the home page.
+- All the posts can be seen in 'All Posts' section.
+- Click on title of the post or 'read more' to open a detailed view of the post.
+- Creating, Updating, Deleting, and Favoriting a post, all of which require login.
 
-## Build
+## Additional Implementations
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Click on 'Search/Filter' in the nagivation bar for search functionality based on blog title and filtering using blog category.
+- As Navbar is a long-living component, its change-detection behavior was set to 'OnPush'. Imformation is communicated to it using shared services and BehaviorSubjects from RxJS.
+- All the components w/o a direct relationship communicate with each other using shared services and BehaviorSubjects.
